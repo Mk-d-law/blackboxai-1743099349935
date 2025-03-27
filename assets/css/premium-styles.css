@@ -1,0 +1,106 @@
+/* Premium AD Realestate Theme */
+body {
+    background-color: #000;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
+
+/* Neon Text */
+.neon-text {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0ff;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+
+/* Neon Buttons */
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    color: #0ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid #0ff;
+}
+
+.btn-neon:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition-delay: 0.1s;
+}
+
+/* Property Cards */
+.property-card {
+    background: #111;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+    border-color: #0ff;
+}
+
+/* Form Elements */
+input, textarea, select {
+    background: #111 !important;
+    border: 1px solid #333 !important;
+    color: #fff !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #0ff !important;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}
+
+/* Navigation */
+.nav-link {
+    position: relative;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #0ff;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #0ff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
