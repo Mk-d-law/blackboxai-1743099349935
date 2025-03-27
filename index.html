@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD Realestate | Premium Properties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/ad-realtor-styles.css" rel="stylesheet">
+    <link href="assets/css/button-styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-home text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold brand">AD Realestate</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="nav-item px-3 py-2 text-sm font-medium">Buy</a>
+                    <a href="#" class="nav-item px-3 py-2 text-sm font-medium">Sell</a>
+                    <a href="#" class="nav-item px-3 py-2 text-sm font-medium">List</a>
+                    <a href="#" class="nav-item px-3 py-2 text-sm font-medium">About us</a>
+                    <a href="#" class="nav-item px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative hero bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Find Your Dream Home Today</h1>
+            <p class="mt-6 text-xl text-blue-100 max-w-3xl">Browse thousands of properties across the country. We make buying, selling, and renting easy.</p>
+            <div class="mt-10">
+                <div class="bg-white rounded-lg p-2 shadow-xl flex max-w-md">
+                    <input type="text" placeholder="Search by city, neighborhood, or ZIP" class="flex-1 px-4 py-3 focus:outline-none">
+                    <button class="btn-premium px-6 py-3 font-medium"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Properties</h2>
+            <div id="featured-carousel">
+                <div id="carousel-track"></div>
+                <button id="carousel-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"><i class="fas fa-chevron-left"></i></button>
+                <button id="carousel-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8">Available Properties</h2>
+        <div id="property-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+
+    <!-- Property Selling Section -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Have a property to sell?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                List your property & connect with clients faster!
+            </p>
+            <button class="btn-premium px-8 py-3 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+                Sell Your Property Now
+            </button>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+            <div class="mt-12 flex justify-center items-center space-x-6">
+                <img src="https://www.afglobalenterprises.com/images/logoh1.jpg" alt="AF Global Logo" class="h-16">
+                <span class="text-gray-1000 text-xl font-medium">Part of AF Global Enterprises</span>
+            </div>
+    </div>
+
+   
+    
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">AD Realestate</h3>
+                    <p class="text-gray-300">Helping you find your dream home</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Properties</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Agents</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start text-gray-300">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+                            <span>No.1, Kalaignar Road<br>Anna Nagar, Pammal<br>Chennai-75</span>
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <div>
+                                <span>+91 9003111000</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <div>
+                                <span>info@afglobalenterprises.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 AD Realestate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
