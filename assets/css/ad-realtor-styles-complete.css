@@ -1,0 +1,74 @@
+:root {
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --card-bg: #ffffff;
+    --footer-bg: #1f2937;
+    --footer-text: #f9fafb;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.nav-item {
+    color: #4b5563;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary);
+}
+
+.hero {
+    height: 600px;
+}
+
+#featured-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.carousel-slide {
+    min-width: 300px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.property-card {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-premium {
+    background-color: #a5ff03;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(165, 255, 3, 0.2);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+}
