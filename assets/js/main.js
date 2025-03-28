@@ -1,12 +1,15 @@
 const properties = [
     {
+      id : 1 ,
       title: "Luxury Villa",
       location: "Anna Nagar, Chennai",
       price: "₹4.2 Crore",
       beds: 4,
       baths: 3,
       sqft: 3200,
-      image: "property1.jpg"
+      image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600",
+      featured: true,
+      description: "Stylish apartment in the heart of downtown with amazing city views and modern amenities."
     },
     {
       title: "Premium Flat",
@@ -15,7 +18,7 @@ const properties = [
       beds: 3,
       baths: 2,
       sqft: 1800,
-      image: "property2.jpg"
+      image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600"
     },
     {
       title: "Gated Community House",
@@ -24,7 +27,7 @@ const properties = [
       beds: 3,
       baths: 3,
       sqft: 2400,
-      image: "property3.jpg"
+      image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600"
     }
     {
         title: "Luxury Villa",
@@ -33,7 +36,7 @@ const properties = [
         beds: 4,
         baths: 3,
         sqft: 3200,
-        image: "property1.jpg"
+        image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600"
       },
       {
         title: "Premium Flat",
@@ -42,7 +45,7 @@ const properties = [
         beds: 3,
         baths: 2,
         sqft: 1800,
-        image: "property2.jpg"
+        image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600"
       },
       {
         title: "Gated Community House",
@@ -51,7 +54,7 @@ const properties = [
         beds: 3,
         baths: 3,
         sqft: 2400,
-        image: "property3.jpg"
+        image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600"
       }
   ];
 
