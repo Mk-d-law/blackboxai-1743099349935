@@ -53,6 +53,12 @@
     position: relative;
 }
 
+#property-grid div:hover {
+    box-shadow: 0 0 15px #00ff00; /* Fluorescent green glow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
 .property-card:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 10px 20px rgba(165, 255, 3, 0.4);
